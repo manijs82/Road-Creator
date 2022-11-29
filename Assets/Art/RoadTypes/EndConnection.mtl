@@ -1,0 +1,5 @@
+newmtl Road-Unlit
+map_Kd road2.png
+Kd 1.0 1.0 1.0
+d 1.0
+

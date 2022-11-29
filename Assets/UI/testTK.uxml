@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Label text="Mani" display-tooltip-when-elided="true" style="opacity: 1; -unity-font: none; font-size: 53px; color: rgba(231, 101, 101, 255);" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" />
+    <ui:Button text="Button" display-tooltip-when-elided="true" />
+</ui:UXML>
