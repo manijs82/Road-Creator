@@ -2,6 +2,17 @@
 
 public static class DirectionUtils
 {
+    
+    public static bool IsHorizontal(this Direction direction)
+    {
+        return direction is Direction.East or Direction.West;
+    }
+    
+    public static bool IsVertical(this Direction direction)
+    {
+        return direction is Direction.North or Direction.South;
+    }
+    
     public static Vector2 GetVector2(this Direction direction)
     {
         return direction switch

@@ -19,8 +19,12 @@ MonoBehaviour:
   - connectionType: 3
     mesh: {fileID: -5515341774093495431, guid: 4f841742271e59945813647d9db2bccc, type: 3}
   - connectionType: 1
-    mesh: {fileID: -5515341774093495431, guid: 4f841742271e59945813647d9db2bccc, type: 3}
+    mesh: {fileID: -6648257232078383720, guid: 43fea5053a31ebe4bb4f281620fc523b, type: 3}
+  - connectionType: 5
+    mesh: {fileID: -3985750592733589942, guid: e44db371139f4b349b387bb49c49b661, type: 3}
   - connectionType: 2
-    mesh: {fileID: -5515341774093495431, guid: 4f841742271e59945813647d9db2bccc, type: 3}
+    mesh: {fileID: -8486876941731130770, guid: 76064ec82a8fbf44a9df54b6a645ecd4, type: 3}
   - connectionType: 4
     mesh: {fileID: 1177913518004897557, guid: e47ba4527c4b51444ba6c8db28eef6b0, type: 3}
+  - connectionType: 6
+    mesh: {fileID: 8169455507498414670, guid: c8620106366f632489b234e14b949fd1, type: 3}

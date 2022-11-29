@@ -53,10 +53,10 @@ namespace Editor
             {
                 GUI.enabled = false;
                 
-                EditorGUILayout.LabelField("intersection", GUILayout.Width(50));
-                EditorGUILayout.Space();
                 EditorGUILayout.Vector2Field("", intersection.Point);
                 EditorGUILayout.Space();
+                EditorGUILayout.EnumPopup(intersection.type);
+                EditorGUILayout.EnumPopup(intersection.direction);
                 
                 GUI.enabled = true;
                 if (GUILayout.Button("select"))

@@ -1,8 +1,10 @@
 ﻿public enum ConnectionType
 {
     End,
-    Turn,
-    ThreeWay,
+    TurnRight,
+    ThreeWayRight,
     Intersection,
-    Road
+    Road,
+    TurnLeft,
+    ThreeWayLeft
 }
