@@ -7,13 +7,13 @@ public class ConnectionMeshGenerator
 {
     private ConnectionMeshes meshesData;
     private List<ConnectionMeshData> connectionMeshData;
-    private Dictionary<ConnectionType, Mesh> meshes; 
+    private List<Mesh> meshes; 
 
     public ConnectionMeshGenerator(ConnectionMeshes meshesData)
     {
         this.meshesData = meshesData;
-        meshes = new Dictionary<ConnectionType, Mesh>();
-        foreach (var meshData in meshesData.connectionMeshes) meshes.Add(meshData.connectionType, meshData.mesh);
+        meshes = new List<Mesh>();
+        foreach (var meshData in meshesData.connectionMeshes) meshes.Add(meshData.mesh);
         connectionMeshData = new List<ConnectionMeshData>();
 
         CorrectNormals();
@@ -55,7 +55,7 @@ public class ConnectionMeshGenerator
 
     private Mesh GetMesh(ConnectionType type)
     {
-        return meshes[type];
+        return meshes[(int) type];
     }
 
     private void DrawMeshesInstanced()

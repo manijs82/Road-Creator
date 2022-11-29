@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5846ce3f-cbea-42f6-8e9b-4cc6c8d130d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayLeft.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayLeft.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayLeft.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayLeft.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayRight.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayRight.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayRight.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/ThreewayRight.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnLeft.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnLeft.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnLeft.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnLeft.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnRight.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnRight.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnRight.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/TurnRight.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/road2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Art/RoadTypes/road2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ConnectionMeshes.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ConnectionMeshes.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DirectionUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DirectionUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/RoadNetworkEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/RoadNetworkEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/ConnectionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/ConnectionType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetwork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Road-Creator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Road-Creator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/ConnectionMeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/ConnectionMeshGenerator.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669712611558</updated>
-      <workItem from="1669712629904" duration="10248000" />
+      <workItem from="1669712629904" duration="11061000" />
     </task>
     <servers />
   </component>
