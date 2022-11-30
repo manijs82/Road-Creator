@@ -10,13 +10,15 @@ public class RoadNetwork
     public event Action<Connection> OnAddConnection;
     public event Action<Connection> OnRemoveConnection;
 
+    private TileMap tileMap;
     private readonly List<Road> roads;
     private readonly Dictionary<Vector2Int, Connection> connections;
 
     public List<Road> Roads => roads;
 
-    public RoadNetwork()
+    public RoadNetwork(TileMap tileMap)
     {
+        this.tileMap = tileMap;
         roads = new List<Road>();
         connections = new Dictionary<Vector2Int, Connection>();
     }
@@ -55,119 +57,30 @@ public class RoadNetwork
             OnAddConnection?.Invoke(con);
         }
     }
-
+    
     private void SetType(Connection connection)
     {
-        var pos = new Vector2Int(Mathf.RoundToInt(connection.Point.x), Mathf.RoundToInt(connection.Point.y));
-        int trueCount = 0;
-        bool up = connections.ContainsKey(new Vector2Int(pos.x, pos.y + GridSize));
-        bool down = connections.ContainsKey(new Vector2Int(pos.x, pos.y - GridSize));
-        bool right = connections.ContainsKey(new Vector2Int(pos.x + GridSize, pos.y));
-        bool left = connections.ContainsKey(new Vector2Int(pos.x - GridSize, pos.y));
-        trueCount += up ? 1 : 0;
-        trueCount += down ? 1 : 0;
-        trueCount += right ? 1 : 0;
-        trueCount += left ? 1 : 0;
+        var poses = GetNeighbors(connection.Point);
+        var directions = new List<Direction>();
+        foreach (var pos in poses)
+            directions.Add(connections.ContainsKey(pos) ? connections[pos].direction : Direction.None);
 
+        var pattern = tileMap.GetPattern(directions); 
+        if(pattern == null) return;
+        connection.type = pattern.connectionType;
+        connection.SetDirection(pattern.outputDirection);
+    }
 
-        switch (trueCount)
+    private Vector2Int[] GetNeighbors(Vector2 pos)
+    {
+        var point = new Vector2Int(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y));
+        return new[]
         {
-            case 4:
-            {
-                var rightDir = connections[new Vector2Int(pos.x + GridSize, pos.y)].direction;
-                var leftDir = connections[new Vector2Int(pos.x - GridSize, pos.y)].direction;
-                var upDir = connections[new Vector2Int(pos.x, pos.y + GridSize)].direction;
-                var downDir = connections[new Vector2Int(pos.x, pos.y - GridSize)].direction;
-                //if(leftDir.IsHorizontal() && rightDir.IsHorizontal() && upDir.IsVertical() && downDir.IsVertical())
-                connection.type = ConnectionType.Intersection;
-                break;
-            }
-            case 1:
-            {
-                {
-                    connection.type = ConnectionType.End;
-                    if (down)
-                        connection.SetDirection(Direction.South);
-                    if (left)
-                        connection.SetDirection(Direction.West);
-                    if (up)
-                        connection.SetDirection(Direction.North);
-                    if (right)
-                        connection.SetDirection(Direction.East);
-                    break;
-                }
-            }
-            case 2:
-            {
-                if (down && up)
-                {
-                    connection.type = ConnectionType.Road;
-                    connection.SetDirection(Direction.North);
-                }
-
-                if (left && right)
-                {
-                    connection.type = ConnectionType.Road;
-                    connection.SetDirection(Direction.East);
-                }
-
-                if (down && right)
-                {
-                    connection.type = ConnectionType.TurnRight;
-                    connection.SetDirection(Direction.South);
-                }
-                if (down && left)
-                {
-                    connection.type = ConnectionType.TurnLeft;
-                    connection.SetDirection(Direction.South);
-                }
-                
-                if (up && right)
-                {
-                    connection.type = ConnectionType.TurnLeft;
-                    connection.SetDirection(Direction.North);
-                }
-                if (up && left)
-                {
-                    connection.type = ConnectionType.TurnRight;
-                    connection.SetDirection(Direction.North);
-                }
-                break;
-            }
-            case 3:
-            {
-                if (up && down && right)
-                {
-                    var rightDir = connections[new Vector2Int(pos.x + GridSize, pos.y)].direction;
-                    if(rightDir.IsVertical()) break;
-                    connection.type = ConnectionType.ThreeWayLeft;       
-                    connection.SetDirection(Direction.North);
-                }
-                if (up && down && left)
-                {
-                    var leftDir = connections[new Vector2Int(pos.x - GridSize, pos.y)].direction;
-                    if(leftDir.IsVertical()) break;
-                    connection.type = ConnectionType.ThreeWayRight;       
-                    connection.SetDirection(Direction.North);
-                }
-                if (right && left && up)
-                {
-                    var upDir = connections[new Vector2Int(pos.x, pos.y + GridSize)].direction;
-                    if(upDir.IsHorizontal()) break;
-                    connection.type = ConnectionType.ThreeWayRight;       
-                    connection.SetDirection(Direction.East);
-                }
-                if (right && left && down)
-                {
-                    var downDir = connections[new Vector2Int(pos.x, pos.y - GridSize)].direction;
-                    if(downDir.IsHorizontal()) break;
-                    connection.type = ConnectionType.ThreeWayLeft;       
-                    connection.SetDirection(Direction.East);
-                }
-                
-                break;
-            }
-        }
+            new Vector2Int(point.x + GridSize, point.y),
+            new Vector2Int(point.x, point.y + GridSize),
+            new Vector2Int(point.x - GridSize, point.y),
+            new Vector2Int(point.x, point.y - GridSize)
+        };
     }
 
     public void RemoveConnection(Vector2Int pos)

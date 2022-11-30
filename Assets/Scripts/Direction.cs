@@ -3,5 +3,6 @@
     North,
     South,
     East,
-    West
+    West,
+    None
 }

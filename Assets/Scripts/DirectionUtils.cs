@@ -13,6 +13,15 @@ public static class DirectionUtils
         return direction is Direction.North or Direction.South;
     }
     
+    public static Direction GetPositive(this Direction direction)
+    {
+        if (direction == Direction.West)
+            return Direction.East;
+        if (direction == Direction.South)
+            return Direction.North;
+        return direction;
+    }
+    
     public static Vector2 GetVector2(this Direction direction)
     {
         return direction switch

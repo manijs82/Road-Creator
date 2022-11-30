@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class RoadNetworkCreator : MonoBehaviour
 {
+    [SerializeField] private TileMap tileMap;
+    
     public RoadNetwork roadNetwork;
 
     private RoadNetworkEditor roadCreator;
@@ -15,7 +17,7 @@ public class RoadNetworkCreator : MonoBehaviour
 
     private void Awake()
     {
-        roadNetwork = new RoadNetwork();
+        roadNetwork = new RoadNetwork(tileMap);
         grid = new Grid(33, 33, RoadNetwork.GridSize);
         plane = new Plane(Vector3.up, Vector3.zero);
 
