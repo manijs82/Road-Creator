@@ -16,7 +16,4 @@ public class RoadRemover : RoadNetworkEditor
     {
         RemoveConnection(point);
     }
-
-    private Road GetRoad(Vector2Int point) => 
-        Roads.FirstOrDefault(r => r.HasPoint(point));
 }

@@ -11,29 +11,13 @@ public class RoadNetwork
     public event Action<Connection> OnRemoveConnection;
 
     private TileMap tileMap;
-    private readonly List<Road> roads;
     private readonly Dictionary<Vector2Int, Connection> connections;
 
-    public List<Road> Roads => roads;
 
     public RoadNetwork(TileMap tileMap)
     {
         this.tileMap = tileMap;
-        roads = new List<Road>();
         connections = new Dictionary<Vector2Int, Connection>();
-    }
-
-    public void AddRoad(Road road)
-    {
-        roads.Add(road);
-    }
-
-    public void RemoveRoad(Road road)
-    {
-        /* if (!Roads.Contains(road)) return;
-        Roads.Remove(road);
-        RemoveConnections(road);
-        OnRemoveRoad?.Invoke(road); */
     }
 
     public void AddConnection(Connection[] cons)

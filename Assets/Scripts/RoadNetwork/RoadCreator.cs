@@ -19,11 +19,10 @@ public class RoadCreator : RoadNetworkEditor
         if (!CanPlaceRoad(line)) return;
 
         var points = line.GetPoints(RoadNetwork.GridSize);
-        var road = new Road(line);
         
         var connections = new List<Connection>();
         foreach (var point in points)
-            connections.Add(new Connection(point, road, road.IsHorizontal ? Direction.East : Direction.North));
+            connections.Add(new Connection(point, line.IsHorizontalLine ? Direction.East : Direction.North));
         AddConnections(connections.ToArray());
     }
 

@@ -30,7 +30,7 @@ public class RoadNetworkCreator : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            if(Input.GetMouseButtonDown(0))
+            if(Input.GetMouseButton(0))
                 roadRemover.EditNetwork(GetGridPos(GetMousePosOnPlane()));
             return;
         }

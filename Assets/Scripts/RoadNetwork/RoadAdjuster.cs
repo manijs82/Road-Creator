@@ -38,7 +38,4 @@ public class RoadAdjuster : RoadNetworkEditor
 
         return result;
     }
-
-    private bool CanAdjustRoad(Road road) => 
-        !road.roadLine.Inverted && road.roadLine.Magnitude > RoadNetwork.GridSize;
 }

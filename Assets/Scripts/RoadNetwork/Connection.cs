@@ -6,7 +6,6 @@ public class Connection
     public event Action<Direction> OnChangeDirection;
 
     public bool selectedInEditor;
-    public Road road1;
     
     private Vector2 point;
 
@@ -21,11 +20,10 @@ public class Connection
         direction = Direction.North;
     }
 
-    public Connection(Vector2 point, Road road1, Direction direction = Direction.North)
+    public Connection(Vector2 point, Direction direction = Direction.North)
     {
         this.point = point;
         this.direction = direction;
-        this.road1 = road1;
         type = ConnectionType.Road;
     }
 

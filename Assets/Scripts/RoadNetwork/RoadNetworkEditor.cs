@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class RoadNetworkEditor
 {
-    public static event Action<Road> OnEditRoad;
     
     protected readonly RoadNetwork network;
-    protected List<Road> Roads => network.Roads;
 
     protected RoadNetworkEditor(RoadNetwork network)
     {
@@ -16,9 +14,6 @@ public class RoadNetworkEditor
 
     public virtual void EditNetwork(Line line) { }
     public virtual void EditNetwork(Vector2Int point) { }
-
-    protected void RoadEdited(Road road) => 
-        OnEditRoad?.Invoke(road);
 
     protected void AddConnections(Connection[] connections)
     {
