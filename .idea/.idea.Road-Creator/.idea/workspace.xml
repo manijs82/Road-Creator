@@ -2,28 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5846ce3f-cbea-42f6-8e9b-4cc6c8d130d0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/LICENSE.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/OverlapWFC.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/OverlapWFC.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/SimpleTiledWFC.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/SimpleTiledWFC.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/TilePainter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/TilePainter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/Training.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/Training.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/Model.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/Model.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/OverlappingModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/OverlappingModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/SimpleTiledModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/SimpleTiledModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/Stuff.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/unity-wave-function-collapse/impl/Stuff.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Road-Creator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Road-Creator/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/RoadNetworkEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/RoadNetworkEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/CubicMeshRoadGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/CubicMeshRoadGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/QuadRoadGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/QuadRoadGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadMeshData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadMeshData.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadMeshGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadMeshGenerator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadVisualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwordMesh/RoadVisualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/Connection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/Road.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/Road.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadAdjuster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadAdjuster.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadExtensions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadExtensions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetwork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetworkCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetworkCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetworkEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadNetworkEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadRemover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoadNetwork/RoadRemover.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +93,7 @@
       <workItem from="1669712629904" duration="11061000" />
       <workItem from="1669798411960" duration="9172000" />
       <workItem from="1669891692341" duration="4393000" />
+      <workItem from="1669902390657" duration="1393000" />
     </task>
     <servers />
   </component>
