@@ -49,7 +49,7 @@ public class ConnectionMeshGenerator
         foreach (var meshData in connectionMeshData)
         {
             Graphics.DrawMesh(GetMesh(meshData.connection.type), 
-                meshData.matrix, meshesData.connectionsMaterial, 0);
+                meshData.matrix, meshesData.connectionsMaterial, LayerMask.NameToLayer("Road"));
         }
     }
 
